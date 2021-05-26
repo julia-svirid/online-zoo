@@ -1315,3 +1315,10 @@ button.sign-up:hover {
 .pet-arrow-left {
   cursor: pointer;
 }
+.pop-up_heading {
+  padding: 50px 0 26px 53px;
+}
+#feedback-txt {
+  height: 264px;
+  resize: none;
+}

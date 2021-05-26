@@ -242,8 +242,21 @@ buttonRight.addEventListener("click", () => {
   console.log('right');
   init(cardsFirst);
   draw();
-  //draw();
- // draw();
+  draw();
+  draw();
   right();
 });
 
+/* Leave feedback popup */
+const leaveCommentBtn = document.querySelector(".testimonials-button");
+const popUpFeedback = document.querySelector(".leave-feedback");
+const openFeedbackPopUp = () => {
+  popUpBg.classList.remove("hidden");
+  popUpFeedback.classList.remove("hidden");
+};
+const hideFeedbackPopUp = () => {
+  popUpBg.classList.add("hidden");
+  popUpFeedback.classList.add("hidden");
+}
+popUpBg.addEventListener("click", hideFeedbackPopUp);
+leaveCommentBtn.addEventListener("click", openFeedbackPopUp);

@@ -495,7 +495,23 @@
         </form>
       </div>
     </div>
-    <div class="pop-up pop-up_log-in"></div>
+    <div class="pop-up leave-feedback hidden">
+      <div class="feedback-popup_header">
+        <h3 class="section-heading pop-up_heading">Leave feedback</h3>
+      </div>
+      <div class="pop-up_content">
+        <form action="" id="feedback-form">
+          <label for="name" class="form_label name-label">Name</label>
+          <input class="form-input" type="text" id="name" name="name" />
+          <label for="email" class="form_label">Email</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="" />
+          <label for="feedback-txt" class="form_label">Feedback</label>
+          <textarea class="form-input" id="feedback-txt" name="feedback-txt" placeholder="" ></textarea>
+          <button form="feedback-form" class="send-btn">Send</button>
+        </form>
+      </div>
+      
+    </div>
     <script src="../pages/index.js"></script>
   </body>
 </html>
