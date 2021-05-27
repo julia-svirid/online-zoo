@@ -260,3 +260,20 @@ const hideFeedbackPopUp = () => {
 }
 popUpBg.addEventListener("click", hideFeedbackPopUp);
 leaveCommentBtn.addEventListener("click", openFeedbackPopUp);
+
+/*Add animal popup */
+const addAnimalBtn = document.querySelector(".add-pet_btn");
+const popUpAddAnimal = document.querySelector(".add-animal");
+const openAddAnimalPopUp = () => {
+  popUpBg.classList.remove("hidden");
+  popUpAddAnimal.classList.remove("hidden");
+};
+const hideAddAnimalPopUp = () => {
+  popUpBg.classList.add("hidden");
+  popUpAddAnimal.classList.add("hidden");
+}
+popUpBg.addEventListener("click", hideAddAnimalPopUp);
+addAnimalBtn.addEventListener("click", openAddAnimalPopUp);
+
+const uploadPhotoBtn = document.querySelector(".upload-container  label");
+const animalPhoto = document.querySelector(".upload-container input");

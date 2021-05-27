@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F6F9FA;
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f9fa;
 }
 li {
   list-style: none;
@@ -9,27 +9,38 @@ li {
 a {
   text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
 }
 .hidden {
   display: none;
 }
 .section-heading {
-  color: #0D444D;
-  font-family: 'Rubik', sans-serif;
+  color: #0d444d;
+  font-family: "Rubik", sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 400;
 }
 button {
   outline: none;
-  color: #C5E1E5;
+  color: #c5e1e5;
   text-transform: uppercase;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 400;
   border-radius: 100px;
@@ -52,18 +63,16 @@ button {
 }
 .header-bg {
   width: 100%;
-  background-color: #2A8086;
+  background-color: #2a8086;
   height: 110px;
   filter: drop-shadow(0px 1px 10px rgba(18, 87, 91, 0.25));
 }
 
-
 .content.header-content {
   display: grid;
-  grid-template-columns:  0.2fr 1.4fr 0.6fr 0.1fr 0.1fr;;
+  grid-template-columns: 0.2fr 1.4fr 0.6fr 0.1fr 0.1fr;
   grid-template-rows: 110px;
-  grid-template-areas: 
-  "logo nav search login signup";
+  grid-template-areas: "logo nav search login signup";
   align-items: center;
 }
 .header-logo {
@@ -90,8 +99,8 @@ button {
   display: none;
 }
 .nav-item a {
-  font-family: 'Roboto Mono', monospace;
-  color: #C5E1E5;
+  font-family: "Roboto Mono", monospace;
+  color: #c5e1e5;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
@@ -117,7 +126,7 @@ li.nav-item {
 }
 
 button.log-in {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
   background-color: transparent;
   border: none;
@@ -125,15 +134,16 @@ button.log-in {
   height: 52px;
 }
 button.sign-up {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0;
-  border: 1px solid #C5E1E5;
+  border: 1px solid #c5e1e5;
   border-radius: 100px;
   width: 97px;
   height: 52px;
-  background-color: #2A8086;
+  background-color: #2a8086;
 }
-button.log-in, button.sign-up {
+button.log-in,
+button.sign-up {
   cursor: pointer;
 }
 button.log-in:hover {
@@ -157,8 +167,8 @@ button.sign-up:hover {
   display: flex;
 }
 .search-input {
-  color: #C5E1E5;
-  font-family: 'Roboto Mono', monospace;
+  color: #c5e1e5;
+  font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 400;
   border-radius: 100px;
@@ -172,13 +182,13 @@ button.sign-up:hover {
   margin-right: 5px;
 }
 .search-input::placeholder {
-  color: #C5E1E5;
-  font-family: 'Roboto Mono', monospace;
+  color: #c5e1e5;
+  font-family: "Roboto Mono", monospace;
   font-size: 18px;
   font-weight: 400;
   padding: 10px;
 }
-.header-search:hover  .search-input {
+.header-search:hover .search-input {
   width: 130px;
   border: 1px solid #349aa1d3;
 }
@@ -194,23 +204,23 @@ button.sign-up:hover {
   padding-top: 49px;
   display: grid;
   grid-template-areas:
-   "watch-heading watch-img"
-   "watch-txt watch-img"
-   "watch-btn watch-img";
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 2fr 1fr 2.6fr;
+    "watch-heading watch-img"
+    "watch-txt watch-img"
+    "watch-btn watch-img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2.6fr;
 }
 
 .watch-animals-heading {
   grid-area: watch-heading;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 72px;
   max-width: 750px;
   width: 100%;
   height: 160px;
   text-transform: none;
-  color: #F3F7F8;
+  color: #f3f7f8;
   align-self: end;
   padding-bottom: 26px;
   line-height: 81px;
@@ -226,11 +236,11 @@ button.sign-up:hover {
   line-height: 20px;
   max-width: 480px;
   width: 100%;
-  color: #F3F7F8;
+  color: #f3f7f8;
 }
 .watch-animals-btn {
   grid-area: watch-btn;
-  color: #0D444D;
+  color: #0d444d;
   width: 258px;
   height: 52px;
   border: none;
@@ -255,9 +265,9 @@ button.sign-up:hover {
 }
 .play-icon {
   position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-25%, -23%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -23%);
   transition: ease-in 0.5s;
 }
 .play-icon:hover {
@@ -267,13 +277,11 @@ button.sign-up:hover {
 }
 /* How it works */
 .how-it-works-bg {
-  background:
-  url(../assets/icons/Bamboo.svg) 0% 16%,
-  url(../assets/icons/tree.svg) 12.3% 13%,
-  url(../assets/icons/tree.svg) 43.5% 24% / 90px,
-  url(../assets/icons/panda-bamboo.svg) 56.5% 29%,
-  url(../assets/icons/tree.svg) 90.2% 44%,
-  url(../assets/icons/bg2.svg);
+  background: url(../assets/icons/Bamboo.svg) 0% 16%,
+    url(../assets/icons/tree.svg) 12.3% 13%,
+    url(../assets/icons/tree.svg) 43.5% 24% / 90px,
+    url(../assets/icons/panda-bamboo.svg) 56.5% 29%,
+    url(../assets/icons/tree.svg) 90.2% 44%, url(../assets/icons/bg2.svg);
   background-repeat: no-repeat;
   padding-bottom: 594px;
 }
@@ -281,7 +289,6 @@ button.sign-up:hover {
   padding-bottom: 60px;
 }
 .how-it-works-heading {
-  
   padding-top: 9px;
 }
 .how-it-works-cards {
@@ -304,21 +311,20 @@ button.sign-up:hover {
 .card-icon {
   position: absolute;
   top: 50%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .card-text {
-  color: #0D444D;
+  color: #0d444d;
   font-size: 14px;
   line-height: 20px;
   position: relative;
   top: -11%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .how-it-works-items {
   display: flex;
-
 }
 .bamboo-1 {
   margin: 60px 0;
@@ -326,10 +332,9 @@ button.sign-up:hover {
 .tree-1 {
   margin: 45px 0 0 104px;
 }
-.tree-2 img  {
-  width:89px;
+.tree-2 img {
+  width: 89px;
   height: 158px;
- 
 }
 .tree-2 {
   margin: 105px 0 0 443px;
@@ -344,7 +349,7 @@ button.sign-up:hover {
 /*PETS*/
 .animal-link {
   display: block;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 .content.pets {
   display: flex;
@@ -360,9 +365,9 @@ button.sign-up:hover {
   align-items: center;
   justify-content: center;
   height: 52px;
-  border: 1px solid #19707D;
+  border: 1px solid #19707d;
   background-color: transparent;
-  color: #19707D;
+  color: #19707d;
   letter-spacing: 2px;
   margin-bottom: 66px;
 }
@@ -384,7 +389,7 @@ button.sign-up:hover {
 .pet-card {
   width: 480px;
   height: 364px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
@@ -465,7 +470,7 @@ button.sign-up:hover {
 }
 .pet-information {
   width: 100%;
-  border-top: 1px solid #E5EAEB;
+  border-top: 1px solid #e5eaeb;
   display: flex;
   margin: 20px 0 0 20px;
   padding-top: 20px;
@@ -477,7 +482,7 @@ button.sign-up:hover {
 }
 .pet-name {
   font-size: 24px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   text-transform: none;
   margin-bottom: 6px;
 }
@@ -490,7 +495,7 @@ button.sign-up:hover {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
   margin-top: 11.5px;
   margin-right: 24px;
 }
@@ -507,7 +512,7 @@ button.sign-up:hover {
   flex-wrap: wrap;
 }
 .pay-and-feed-heading {
-  color: #C5E1E5;
+  color: #c5e1e5;
   padding-top: 100px;
   padding-right: 400px;
 }
@@ -515,7 +520,7 @@ button.sign-up:hover {
   border: none;
   width: 354px;
   height: 52px;
-  color: #0D444D;
+  color: #0d444d;
   transition: linear 0.2s;
   margin-left: auto;
   margin-top: 90px;
@@ -550,7 +555,7 @@ button.sign-up:hover {
   align-items: center;
 }
 .pay-step-text {
-  color: #C5E1E5;
+  color: #c5e1e5;
   margin-top: -26px;
 }
 .long-arrow {
@@ -586,11 +591,10 @@ button.sign-up:hover {
   align-items: center;
   justify-content: center;
   height: 52px;
-  border: 1px solid #19707D;
+  border: 1px solid #19707d;
   background-color: transparent;
-  color: #19707D;
+  color: #19707d;
   letter-spacing: 2px;
-
 }
 .testimonials-button::before {
   content: url(../assets/icons/comment.svg);
@@ -610,7 +614,7 @@ button.sign-up:hover {
   width: 480px;
 }
 .comment {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   padding: 25px 45px 78px;
   position: relative;
@@ -629,12 +633,12 @@ button.sign-up:hover {
 }
 
 .comment-date {
-  color: #B2B2B2;
+  color: #b2b2b2;
   font-size: 14px;
 }
 .comment-text {
   font-style: italic;
-  color: #2D2D2D;
+  color: #2d2d2d;
   font-size: 16px;
   padding-top: 9px;
   letter-spacing: -0.3px;
@@ -646,7 +650,7 @@ button.sign-up:hover {
 }
 .comment-user-data {
   font-style: italic;
-  color: #2D2D2D;
+  color: #2d2d2d;
   padding-left: 15px;
 }
 /*Look at animals*/
@@ -655,12 +659,12 @@ button.sign-up:hover {
   position: relative;
 }
 .look-at-animals-icons {
-    display: flex;
-    margin-top: 64px;
-    position: relative;
-    width: 100%;
-    max-width: 1305px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 64px;
+  position: relative;
+  width: 100%;
+  max-width: 1305px;
+  justify-content: space-between;
 }
 .look-at-animals-icon {
   text-align: center;
@@ -742,7 +746,7 @@ button.sign-up:hover {
 }
 .designed-by {
   margin-left: auto;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 29px;
   font-size: 16px;
   text-transform: uppercase;
@@ -752,7 +756,7 @@ button.sign-up:hover {
 /*MAP*/
 .map-bg {
   width: 100%;
-  background-color: #2A8086;
+  background-color: #2a8086;
 }
 .map {
   height: 1013px;
@@ -763,7 +767,7 @@ button.sign-up:hover {
   position: relative;
 }
 .map-heading {
-  color: #C5E1E5;
+  color: #c5e1e5;
   margin-bottom: 28%;
 }
 .map-sizer {
@@ -780,10 +784,10 @@ button.sign-up:hover {
   width: 73px;
   height: 73px;
   border-radius: 120% 120% 170% 100% / 120% 120% 150% 150%;
-  border: 7px solid #C5E1E5;
+  border: 7px solid #c5e1e5;
   transition: transform 2s;
   margin-bottom: 10px;
-  box-shadow: 0px 4px 10px #C5E1E5;
+  box-shadow: 0px 4px 10px #c5e1e5;
 }
 .map-icon.panda-map::before {
   background: url(../assets/images/panda.png);
@@ -804,7 +808,7 @@ button.sign-up:hover {
 .map-icon.alligator-map::before {
   background: url(../assets/images/alligator.png);
   background-size: cover;
-  background-position-x: -1px
+  background-position-x: -1px;
 }
 .map-icon::before {
   content: "";
@@ -817,7 +821,7 @@ button.sign-up:hover {
 }
 .map-icon:hover {
   transform: rotate(360deg);
-  border-color: #0A5D69;
+  border-color: #0a5d69;
 }
 .map-icon:hover:before {
   transform: rotate(-360deg);
@@ -873,7 +877,6 @@ button.sign-up:hover {
 .map-animal-wrap-gorilla {
   left: 47%;
   top: 35%;
-
 }
 .map-animal-wrap-panda {
   right: 24%;
@@ -895,14 +898,13 @@ button.sign-up:hover {
 .sidebar-container {
   position: sticky;
   top: 30px;
-
 }
 .sidebar-animal {
   text-align: center;
   margin-bottom: 50px;
 }
 .sidebar-animal-name {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
   text-align: center;
   font-weight: 500;
@@ -920,8 +922,8 @@ button.sign-up:hover {
 }
 .sidebar-active {
   cursor: default;
-  border: 12px solid #2A8086;
-  box-shadow: 0px 4px 10px #C5E1E5;
+  border: 12px solid #2a8086;
+  box-shadow: 0px 4px 10px #c5e1e5;
 }
 .sidebar-animal-photo.panda-sidebar-img::before {
   background: url(../assets/images/panda.png);
@@ -942,7 +944,7 @@ button.sign-up:hover {
 .sidebar-animal-photo.alligator-sidebar-img::before {
   background: url(../assets/images/alligator.png);
   background-size: cover;
-  background-position-x: -1px
+  background-position-x: -1px;
 }
 .sidebar-animal-photo::before {
   content: "";
@@ -980,9 +982,9 @@ button.sign-up:hover {
 }
 .main-cameras-heading,
 .side-cameras-heading {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
-  color: #0D444D;
+  color: #0d444d;
   text-transform: capitalize;
   font-weight: 400;
   margin-bottom: 7px;
@@ -1016,12 +1018,12 @@ button.sign-up:hover {
   flex-direction: column;
 }
 .live-btn {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   border-radius: 8px;
   width: 65px;
   height: 30px;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   color: #ffffff;
   text-transform: uppercase;
@@ -1047,7 +1049,7 @@ button.sign-up:hover {
 }
 .info-list {
   padding: 0;
-  color: #0D444D;
+  color: #0d444d;
 }
 .info-list-item {
   margin-bottom: 39px;
@@ -1064,12 +1066,12 @@ button.sign-up:hover {
   max-width: 528px;
 }
 .info-list-link {
-  color: #0D444D;
+  color: #0d444d;
   text-decoration: underline;
 }
 .facts {
   flex: 48.5%;
-  color: #0D444D;
+  color: #0d444d;
 }
 .facts-list-txt,
 .facts-list {
@@ -1092,9 +1094,8 @@ button.sign-up:hover {
 .donate-bg {
   width: 100%;
   background: url(../assets/icons/tree.svg) 385px 19px,
-  url(../assets/icons/panda-bamboo.svg) 56% -18%,
-  url(../assets/icons/tree.svg) 94.5% 77%,
-  url(../assets/icons/donate-bg.svg);
+    url(../assets/icons/panda-bamboo.svg) 56% -18%,
+    url(../assets/icons/tree.svg) 94.5% 77%, url(../assets/icons/donate-bg.svg);
   background-repeat: no-repeat;
   height: 402px;
 }
@@ -1109,7 +1110,7 @@ button.sign-up:hover {
   border: none;
   width: 354px;
   height: 52px;
-  color: #0D444D;
+  color: #0d444d;
   transition: linear 0.2s;
   margin-top: 90px;
   letter-spacing: -0.05em;
@@ -1143,18 +1144,18 @@ button.sign-up:hover {
   width: 568px;
   position: fixed;
   top: 50%;
-  left: 50%;                
+  left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
 }
 .pop-up_header {
   width: 100%;
-  background-color: #2A8086;
+  background-color: #2a8086;
   border-radius: 20px 20px 0 0;
   display: flex;
   justify-content: center;
@@ -1183,9 +1184,9 @@ button.sign-up:hover {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
-  color: #0D444D;
+  color: #0d444d;
   cursor: pointer;
-  border-bottom: 2px solid #C5E1E5;
+  border-bottom: 2px solid #c5e1e5;
   transition: linear 0.2s;
   padding: 20px 0;
 }
@@ -1195,7 +1196,7 @@ button.sign-up:hover {
   transition: linear 0.2s;
 }
 .toggle_mode {
-  border-bottom: 2px solid #2A8086;
+  border-bottom: 2px solid #2a8086;
 }
 .pop-up_social {
   display: flex;
@@ -1207,14 +1208,13 @@ button.sign-up:hover {
   width: 216px;
   height: 54px;
   font-size: 16px;
-  color: #2D2D2D;
+  color: #2d2d2d;
   text-transform: capitalize;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #ffffff;
   border: none;
   border-radius: 10px;
   box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
- 
 }
 .pop-up_google-btn {
   background: url(../assets/icons/Google-Logo.svg) 10% center no-repeat;
@@ -1228,7 +1228,7 @@ button.sign-up:hover {
   flex-direction: column;
 }
 .form_label {
-  color: #0D444D;
+  color: #0d444d;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 8px;
@@ -1245,7 +1245,7 @@ button.sign-up:hover {
   padding-left: 13px;
 }
 .form_label_agree {
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 .checkbox_agree {
   margin-bottom: 32px;
@@ -1253,7 +1253,7 @@ button.sign-up:hover {
 .send-btn {
   width: 448px;
   height: 54px;
-  background-color: #2A8088;
+  background-color: #2a8088;
   border: none;
   font-weight: 400;
   letter-spacing: 3px;
@@ -1275,19 +1275,19 @@ button.sign-up:hover {
   display: none;
   position: absolute;
   border-radius: 10px;
-  background-color: #C5E1E5;
+  background-color: #c5e1e5;
   color: #122629;
   text-transform: uppercase;
   font-weight: 400;
   padding: 6px;
   font-size: 14px;
   right: -3%;
-  top: -53%
+  top: -53%;
 }
 .username-icon {
   position: relative;
 }
-.username-icon:hover .username-tooltip{
+.username-icon:hover .username-tooltip {
   display: block;
 }
 .user-menu {
@@ -1321,4 +1321,75 @@ button.sign-up:hover {
 #feedback-txt {
   height: 264px;
   resize: none;
+}
+.add-pet_btn {
+  width: 303px;
+  font-size: 16px;
+  height: 40px;
+  margin: 4px 10px 56px auto;
+  border: 1px solid #19707d;
+  color: #19707d;
+  background: transparent;
+}
+.add-pet_btn:hover,
+#gender:hover {
+  box-shadow: 0 2px 50px 0px rgba(185, 213, 217, 0.6);
+  transition: linear 0.3s;
+}
+#gender {
+  outline: none;
+  border: none;
+  background: #2a808627;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: linear 0.2s;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  color: #0d444d;
+}
+option:hover {
+  background-color: #0a5d69;
+}
+#add-animal_form {
+  display: flex;
+  flex-direction: column;
+}
+.upload-container {
+  position: relative;
+  z-index: 10;
+}
+.upload-container input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
+}
+.upload-container input[type=file]:focus + label {
+  background: #2a808627;
+}
+.upload-container  label  {
+  border: 1px solid #2a8086;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: linear 0.2s;
+  margin-bottom: 20px;
+  padding: 8px;
+  cursor: pointer;
+  color: #0d444d;
+}
+.upload-container  label:hover {
+  box-shadow: 0 2px 20px 0px rgba(185, 213, 217, 0.6);
+}
+.gender-photo_animal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gender-container {
+  display: flex;
+  flex-direction: column;
 }
