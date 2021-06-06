@@ -32,7 +32,7 @@
             <li class="nav-item">
               <a href="../pages/zoos/panda.html">Zoos</a>
             </li>
-            <li class="nav-item"><a href="#">Contact us</a></li>
+            <li class="nav-item"><a class="contact-us" href="#">Contact us</a></li>
             <li class="nav-item">
               <a
                 href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
@@ -155,7 +155,7 @@
       <div class="container pets-in-zoo">
         <div class="content pets">
           <h3 class="section-heading pets-heading">Pets in zoo</h3>
-          <button class="add-pet_btn">Add animal</button>
+          <button class="add-pet_btn ">Add animal</button>
           <form action="./map.html" class="pets-button-form" target="_blank">
             <button class="pets-button">Choose your Favorite</button>
           </form>
@@ -543,8 +543,8 @@
       </div>
       <div class="pop-up_content">
         <form action="" id="add-animal_form">
-          <label for="animal-name" class="form_label name-label">Name</label>
-          <input class="form-input" type="text" id="name" name="animal-name" />
+          <label for="animal-name" class="form_label name-label">Animal Name</label>
+          <input class="form-input" type="text" id="animal-name" name="animal-name" />
           <div class="gender-photo_animal">
             <div class="gender-container">
               <label for="gender" class="form_label">Gender</label>
@@ -562,9 +562,11 @@
                 type="file"
                 name="file"
                 accept="image/png, image/jpeg"
+                onchange="previewFile()"
               />
               <label for="file-input">Upload animal photo</label>
             </div>
+            <img class="preview" src="../assets/icons/pawprint.svg" height="45" alt="animal-photo">
           </div>
           <label for="age" class="form_label">Age</label>
           <input

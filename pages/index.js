@@ -276,4 +276,21 @@ popUpBg.addEventListener("click", hideAddAnimalPopUp);
 addAnimalBtn.addEventListener("click", openAddAnimalPopUp);
 
 const uploadPhotoBtn = document.querySelector(".upload-container  label");
-const animalPhoto = document.querySelector(".upload-container input");
+const photoFile = document.querySelector(".upload-container input").files[0];
+
+function previewFile() {
+  const preview = document.querySelector('.preview');
+  const file = document.querySelector('input[type=file]').files[0];
+  const reader = new FileReader();
+
+  reader.onloadend = function () {
+    preview.src = reader.result;
+  }
+
+  if (file) {
+    reader.readAsDataURL(file);
+  } else {
+    preview.src = "";
+  }
+}
+
