@@ -155,7 +155,7 @@
       <div class="container pets-in-zoo">
         <div class="content pets">
           <h3 class="section-heading pets-heading">Pets in zoo</h3>
-          <button class="add-pet_btn ">Add animal</button>
+          <button class="add-pet_btn hidden">Add animal</button>
           <form action="./map.html" class="pets-button-form" target="_blank">
             <button class="pets-button">Choose your Favorite</button>
           </form>
@@ -303,7 +303,7 @@
               <div class="comment-review">
                 <div class="comment">
                   <p class="comment-date">20 Decepmer 2020</p>
-                  <p class="comment-text">
+                  <p class="comment-text change">
                     Awesome place to observe my favourite aligators at Florida,
                     the quality of the video is great.
                   </p>
@@ -517,23 +517,23 @@
       <div class="pop-up_content">
         <form action="" id="feedback-form">
           <label for="name" class="form_label name-label">Name</label>
-          <input class="form-input" type="text" id="name" name="name" />
+          <input class="form-input feedback-name" type="text" id="name" name="name" />
           <label for="email" class="form_label">Email</label>
           <input
-            class="form-input"
+            class="form-input feedback-email"
             type="email"
             id="email"
             name="email"
             placeholder=""
           />
-          <label for="feedback-txt" class="form_label">Feedback</label>
+          <label for="feedback-txt" class="form_label feedback">Feedback</label>
           <textarea
             class="form-input"
             id="feedback-txt"
             name="feedback-txt"
             placeholder=""
           ></textarea>
-          <button form="feedback-form" class="send-btn">Send</button>
+          <button form="feedback-form" class="send-btn feedback">Send</button>
         </form>
       </div>
     </div>
@@ -592,7 +592,7 @@
             name="animal-video"
             placeholder=""
           />
-          <button form="feedback-form" class="send-btn">Save</button>
+          <button form="add-animal_form" class="send-btn">Save</button>
         </form>
       </div>
     </div>

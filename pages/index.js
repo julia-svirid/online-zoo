@@ -21,7 +21,7 @@ signUpBtn.addEventListener("click", openSignUp);
 const hidePopUp = () => {
   popUpBg.classList.add("hidden");
   popUp.classList.add("hidden");
-}
+};
 popUpBg.addEventListener("click", hidePopUp);
 const logInMode = () => {
   state = "logIn";
@@ -65,8 +65,8 @@ const isFormFilled = (event) => {
   let empty = false;
   if (state === "signUp") {
     if (inputName.value === "" || inputEmail.value === "") {
-        empty = true;
-        inputName.placeholder = "Fill the input";
+      empty = true;
+      inputName.placeholder = "Fill the input";
     }
     if (empty === true) {
       alert("Fill all inputs!");
@@ -77,57 +77,55 @@ const isFormFilled = (event) => {
       event.preventDefault();
     }
     if (!checkbox.checked) {
-        console.log(checkbox.checked);
+      console.log(checkbox.checked);
       alert("Agree with terms");
       event.preventDefault();
-    }
-    else {
+    } else {
       loggedIn = true;
     }
   }
   if (state === "logIn") {
     if (inputEmail.value === "") {
-        empty = true;
+      empty = true;
     }
     if (empty === true) {
-        alert("Fill all inputs!");
-        event.preventDefault();
-      }
-    if (inputPassword.value.length < 8) {
-        inputPassword.value = "";
-        inputPassword.placeholder = "Password is too short";
-        event.preventDefault();
-      }
-      else {
-        loggedIn = true;
-      }
-  }
-    if (loggedIn === true) {
-      console.log('logged');
+      alert("Fill all inputs!");
+      event.preventDefault();
     }
+    if (inputPassword.value.length < 8) {
+      inputPassword.value = "";
+      inputPassword.placeholder = "Password is too short";
+      event.preventDefault();
+    } else {
+      loggedIn = true;
+    }
+  }
+  if (loggedIn === true) {
+    console.log("logged");
+  }
 };
 sendButton.addEventListener("click", isFormFilled);
 const validateEmail = () => {
-    const re = /^[a-z0-9](\.?[a-z0-9]){5,}@gmail\.com$/;
-    const validEmail = re.test(String(inputEmail.value).toLowerCase());
-    if (validEmail === false) {
-        inputEmail.value = "";
-        inputEmail.placeholder = "Invalid email";
-    }
-}
+  const re = /^[a-z0-9](\.?[a-z0-9]){5,}@gmail\.com$/;
+  const validEmail = re.test(String(inputEmail.value).toLowerCase());
+  if (validEmail === false) {
+    inputEmail.value = "";
+    inputEmail.placeholder = "Invalid email";
+  }
+};
 sendButton.addEventListener("click", validateEmail);
 const userIcon = document.querySelector(".media-sign-up");
 const getUserName = () => {
   const userName = inputName.value;
   return userName;
-}
-const userIconContainer =  document.querySelector(".username-icon");
+};
+const userIconContainer = document.querySelector(".username-icon");
 const createUsernameTooltip = (personName) => {
   let tooltip = document.createElement("div");
   tooltip.classList.add("username-tooltip");
   userIconContainer.prepend(tooltip);
   tooltip.innerHTML = `<p>${personName}</p>`;
-}
+};
 
 const loginInAccount = () => {
   if (loggedIn === true) {
@@ -138,7 +136,7 @@ const loginInAccount = () => {
     userIconContainer.classList.remove("hidden");
     createUsernameTooltip(inputName.value);
   }
-}
+};
 sendButton.addEventListener("click", loginInAccount);
 const googleBtn = document.querySelector(".pop-up_google-btn");
 const facebookBtn = document.querySelector(".pop-up_facebook-btn");
@@ -162,23 +160,23 @@ const openUserMenu = () => {
   if (userMenu.classList.contains("hidden")) {
     userMenu.classList.remove("hidden");
   }
-}
+};
 const closeUserMenu = () => {
   if (!userMenu.classList.contains("hidden")) {
     userMenu.classList.add("hidden");
   }
-}
+};
 userIcon.addEventListener("click", closeUserMenu);
 userIcon.addEventListener("click", openUserMenu);
-const logOutBtn =  document.querySelector(".log-out-btn");
+const logOutBtn = document.querySelector(".log-out-btn");
 
 const logOut = () => {
   loggedIn = false;
   signUpBtn.classList.remove("hidden");
   logInBtn.classList.remove("hidden");
   userIconContainer.classList.add("hidden");
-}
-logOutBtn.addEventListener('click', logOut);
+};
+logOutBtn.addEventListener("click", logOut);
 
 /* Slider */
 const buttonRight = document.querySelector(".pet-arrow-right");
@@ -202,28 +200,27 @@ const draw = () => {
   card.classList.add("pet-card");
   card = slider[step];
   card.style.left = 350 + "px";
-  sliderLineFirst.appendChild(card); 
+  sliderLineFirst.appendChild(card);
   if (step + 1 === slider.length) {
     step = 0;
-  }
-  else {
+  } else {
     step++;
   }
   offset = 2;
   console.log(card);
-}
+};
 let offset2 = 0;
 const left = () => {
   let slides = document.querySelectorAll(".slider-line-first .pet-card");
 
-  for (let i = 0; i < slides.length - 1; i++)  {
-    slides[i].style.left = offset2*350 - 350 + "px";
+  for (let i = 0; i < slides.length - 1; i++) {
+    slides[i].style.left = offset2 * 350 - 350 + "px";
     offset2++;
   }
   console.log(offset2);
-}
+};
 buttonLeft.addEventListener("click", () => {
-  console.log('left');
+  console.log("left");
   init(cardsFirst);
   draw();
   left();
@@ -231,15 +228,15 @@ buttonLeft.addEventListener("click", () => {
 
 const right = () => {
   let slides = document.querySelectorAll(".slider-line-first .pet-card");
-  for (let i = slides.length - 1; i>0; i--) {
-    slides[i].style.left = offset2*350 + 350 + "px";
+  for (let i = slides.length - 1; i > 0; i--) {
+    slides[i].style.left = offset2 * 350 + 350 + "px";
     offset2--;
   }
   console.log(offset2);
-}
+};
 
 buttonRight.addEventListener("click", () => {
-  console.log('right');
+  console.log("right");
   init(cardsFirst);
   draw();
   draw();
@@ -257,9 +254,40 @@ const openFeedbackPopUp = () => {
 const hideFeedbackPopUp = () => {
   popUpBg.classList.add("hidden");
   popUpFeedback.classList.add("hidden");
-}
+};
 popUpBg.addEventListener("click", hideFeedbackPopUp);
 leaveCommentBtn.addEventListener("click", openFeedbackPopUp);
+
+const sendFeedbackBtn = document.querySelector(".send-btn.feedback");
+let leftFeedback = false;
+const isFeedbackFilled = (event) => {
+  let emptyInput = false;
+  const inputNameFeedback = document.querySelector(".form-input.feedback-name");
+  const inputEmailFeedback = document.querySelector(
+    ".form-input.feedback-email"
+  );
+  if (inputNameFeedback.value === "" || inputEmailFeedback.value === "") {
+    emptyInput = true;
+    inputNameFeedback.placeholder = "Fill the input";
+  }
+  if (emptyInput === true) {
+    alert("Fill all inputs!");
+    event.preventDefault();
+  } else {
+    leftFeedback = true;
+  }
+};
+const leaveComment = () => {
+  const commentTextToChange = document.querySelector('.comment-text.change');
+  const commentTextNew = document.querySelector("#feedback-txt").value;
+  if (leftFeedback = true) {
+    hideFeedbackPopUp();
+    commentTextToChange.value = commentTextNew;
+  }
+}
+
+sendFeedbackBtn.addEventListener("click", isFeedbackFilled);
+sendFeedbackBtn.addEventListener("click", isFeedbackFilled);
 
 /*Add animal popup */
 const addAnimalBtn = document.querySelector(".add-pet_btn");
@@ -271,7 +299,7 @@ const openAddAnimalPopUp = () => {
 const hideAddAnimalPopUp = () => {
   popUpBg.classList.add("hidden");
   popUpAddAnimal.classList.add("hidden");
-}
+};
 popUpBg.addEventListener("click", hideAddAnimalPopUp);
 addAnimalBtn.addEventListener("click", openAddAnimalPopUp);
 
@@ -279,13 +307,13 @@ const uploadPhotoBtn = document.querySelector(".upload-container  label");
 const photoFile = document.querySelector(".upload-container input").files[0];
 
 function previewFile() {
-  const preview = document.querySelector('.preview');
-  const file = document.querySelector('input[type=file]').files[0];
+  const preview = document.querySelector(".preview");
+  const file = document.querySelector("input[type=file]").files[0];
   const reader = new FileReader();
 
   reader.onloadend = function () {
     preview.src = reader.result;
-  }
+  };
 
   if (file) {
     reader.readAsDataURL(file);
@@ -293,4 +321,3 @@ function previewFile() {
     preview.src = "";
   }
 }
-
