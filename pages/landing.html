@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pages/style.css" />
+    <link rel="stylesheet" href="../pages/media.css" />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;500&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Online-zoo</title>
+  </head>
+  <body>
+    <header class="header-bg">
+      <h1 class="hidden">Online Zoo</h1>
+      <div class="content header-content">
+        <div class="header-logo">
+          <a href="../pages/landing.html"
+            ><img src="../assets/icons/Logo-large.svg" alt="main-logo"
+          /></a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="chosen" href="../pages/landing.html">About</a>
+            </li>
+            <li class="nav-item"><a href="../pages/map.html">Map</a></li>
+            <li class="nav-item">
+              <a href="../pages/zoos/panda.html">Zoos</a>
+            </li>
+            <li class="nav-item"><a class="contact-us" href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                >Design</a
+              >
+            </li>
+            <li class="nav-item burger-item"><a href="#">My account</a></li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <form action="">
+            <input
+              class="search-input"
+              type="text"
+              name="search"
+              placeholder="Search.."
+            />
+          </form>
+          <img
+            class="search-icon"
+            src="../assets/icons/search.svg"
+            alt="loupe"
+          />
+        </div>
+        <button class="log-in">Log in</button>
+        <button class="sign-up">Sign up</button>
+        <div class="username-icon">
+          <button class="media-sign-up hidden"></button>
+          <div class="user-menu hidden">
+            <button class="log-out-btn">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="bg-container">
+        <div class="content watch-animals">
+          <h2 class="watch-animals-heading">
+            Watch your favorite <strong>animals online</strong>
+          </h2>
+          <p class="watch-animals-text">
+            Observe different animals from around the world online in live time.
+            Help volunteers to take a good care of animals, donate to your
+            favorite ones.
+          </p>
+          <div class="watch-animals-buttons">
+            <button class="watch-animals-btn">Watch now</button>
+            <button class="donate-animals-btn-media">Donate</button>
+          </div>
+
+          <div class="watch-animals-img">
+            <img
+              class="watch-animals-panda"
+              src="../assets/images/Panda-bg.svg"
+              alt="Background-panda"
+            />
+            <img
+              class="play-icon"
+              src="../assets/icons/play-icon.svg"
+              alt="play"
+            />
+          </div>
+        </div>
+
+        <div class="content how-it-works">
+          <h3 class="section-heading how-it-works-heading">How it works</h3>
+          <div class="how-it-works-cards">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-ellipse"
+                  src="../assets/images/Ellipse.svg"
+                  alt="ellipse"
+                />
+                <img
+                  class="card-icon"
+                  src="../assets/icons/binoculars.svg"
+                  alt="binoculars"
+                />
+              </div>
+              <p class="card-text">
+                Keep an eye on your favourite animals online
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-ellipse"
+                  src="../assets/images/Ellipse.svg"
+                  alt="ellipse"
+                />
+                <img
+                  class="card-icon"
+                  src="../assets/icons/dog-paw.svg"
+                  alt="paw"
+                />
+              </div>
+              <p class="card-text">Become a part of the communtity</p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-ellipse"
+                  src="../assets/images/Ellipse.svg"
+                  alt="ellipse"
+                />
+                <img
+                  class="card-icon"
+                  src="../assets/icons/trust.svg"
+                  alt="trust"
+                />
+              </div>
+              <p class="card-text">Support animals with the donations</p>
+            </div>
+          </div>
+        </div>
+        <div class="how-it-works-bg"></div>
+      </div>
+      <div class="container pets-in-zoo">
+        <div class="content pets">
+          <h3 class="section-heading pets-heading">Pets in zoo</h3>
+          <button class="add-pet_btn hidden">Add animal</button>
+          <form action="./map.html" class="pets-button-form" target="_blank">
+            <button class="pets-button">Choose your Favorite</button>
+          </form>
+          <div class="pets-cards">
+            <div class="slider-line-first">
+              <div class="pet-card" data-order="0">
+                <div class="pet-photo panda"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Pandas</h4>
+                    <p class="pet-description">
+                      Shenshuping Gengda Panda Center
+                    </p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="../pages/zoos/panda.html" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-card" data-order="1">
+                <div class="pet-photo eagle"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Eagles</h4>
+                    <p class="pet-description">Catalina Island</p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="../pages/zoos/eagle.html" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-card" data-order="2">
+                <div class="pet-photo gorillas"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Gorillas</h4>
+                    <p class="pet-description">GRACE gorillas</p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="../pages/zoos/gorilla.html" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-line-second">
+              <div class="pet-card">
+                <div class="pet-photo alligators"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Alligators</h4>
+                    <p class="pet-description">
+                      St. Augustine's Alligator Farm Zoological Park
+                    </p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="../pages/zoos/alligator.html" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-card">
+                <div class="pet-photo elephants"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Elephants</h4>
+                    <p class="pet-description">Tembe Elephant Park</p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-card">
+                <div class="pet-photo lemurs"></div>
+                <div class="pet-information">
+                  <div class="pet-info">
+                    <h4 class="pet-name">Lemurs</h4>
+                    <p class="pet-description">Madagascar</p>
+                  </div>
+                  <div class="tv-icon">
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pet-arrows">
+          <img
+            class="pet-arrow-right"
+            src="../assets/icons/pet-arrow-right.svg"
+            alt="arrow-right"
+          />
+          <img
+            class="pet-arrow-left"
+            src="../assets/icons/pet-arrow-left.svg"
+            alt="arrow-left"
+          />
+        </div>
+        <div class="pet-penguin">
+          <a href="#"
+            ><img src="../assets/icons/Penguin.svg" alt="Penguin"
+          /></a>
+        </div>
+      </div>
+      <div class="pay-and-feed-bg">
+        <div class="content pay-and-feed">
+          <h3 class="section-heading pay-and-feed-heading">Pay and feed</h3>
+          <button class="pay-and-feed-button">Donate to volunteers</button>
+          <div class="pay-steps">
+            <div class="pay-step">
+              <div class="pay-step-img">
+                <img src="../assets/icons/donate.svg" alt="donate" />
+              </div>
+              <p class="card-text pay-step-text">
+                You donate to your favourite animals
+              </p>
+            </div>
+            <div class="long-arrow first-arrow"></div>
+            <div class="pay-step">
+              <div class="pay-step-img">
+                <img src="../assets/icons/trust-2.svg" alt="trust" />
+              </div>
+              <p class="card-text pay-step-text">
+                Zoo Keepers feed animals with their favourite food
+              </p>
+            </div>
+            <div class="long-arrow second-arrow"></div>
+            <div class="pay-step">
+              <div class="pay-step-img">
+                <img src="../assets/icons/monkey.svg" alt="monkey" />
+              </div>
+              <p class="card-text pay-step-text">
+                Animals are healthy and happy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-bg">
+        <div class="content testimonials">
+          <h3 class="section-heading testimonials-heading">testimonials</h3>
+          <button class="testimonials-button">Leave feedback</button>
+          <div class="testimonials-comments">
+            <div class="comment-block">
+              <div class="comment-review">
+                <div class="comment">
+                  <p class="comment-date">20 Decepmer 2020</p>
+                  <p class="comment-text change">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="comment-triangle"></div>
+              </div>
+              <div class="comment-user">
+                <img
+                  class="comment-user-img"
+                  src="../assets/images/user-1.png"
+                  alt="user"
+                />
+                <p class="comment-user-data">Adam, Spain</p>
+              </div>
+            </div>
+            <div class="comment-block">
+              <div class="comment-review">
+                <div class="comment">
+                  <p class="comment-date">20 Decepmer 2020</p>
+                  <p class="comment-text">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="comment-triangle"></div>
+              </div>
+              <div class="comment-user">
+                <img
+                  class="comment-user-img"
+                  src="../assets/images/user-2.png"
+                  alt="user"
+                />
+                <p class="comment-user-data">Chris, Australia</p>
+              </div>
+            </div>
+            <div class="comment-block">
+              <div class="comment-review">
+                <div class="comment">
+                  <p class="comment-date">20 Decepmer 2020</p>
+                  <p class="comment-text">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="comment-triangle"></div>
+              </div>
+              <div class="comment-user">
+                <img
+                  class="comment-user-img"
+                  src="../assets/images/user-3.png"
+                  alt="user"
+                />
+                <p class="comment-user-data">Amely, USA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content look-at-animals">
+        <h3 class="section-heading">Look at this beautiful animals</h3>
+        <div class="look-at-animals-icons">
+          <a
+            class="animal-link"
+            href="../pages/zoos/panda.html"
+            target="_blank"
+          >
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img panda-icon"></div>
+              <h5 class="look-at-animals-name">Pandas</h5>
+            </div>
+          </a>
+          <a
+            class="animal-link"
+            href="../pages/zoos/gorilla.html"
+            target="_blank"
+          >
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img gorillas-icon"></div>
+              <h5 class="look-at-animals-name">Gorillas</h5>
+            </div>
+          </a>
+          <a
+            class="animal-link"
+            href="../pages/zoos/eagle.html"
+            target="_blank"
+          >
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img eagles-icon"></div>
+              <h5 class="look-at-animals-name">Eagles</h5>
+            </div>
+          </a>
+          <a
+            class="animal-link"
+            href="../pages/zoos/alligator.html"
+            target="_blank"
+          >
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img alligators-icon"></div>
+              <h5 class="look-at-animals-name">Alligators</h5>
+            </div>
+          </a>
+          <a class="animal-link" href="#" target="_blank">
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img elephants-icon"></div>
+              <h5 class="look-at-animals-name">Elephants</h5>
+            </div>
+          </a>
+          <a class="animal-link" href="#" target="_blank">
+            <div class="look-at-animals-icon">
+              <div class="look-at-animals-img lemurs-icon"></div>
+              <h5 class="look-at-animals-name">Lemurs</h5>
+            </div>
+          </a>
+          <a
+            class="animal-link"
+            href="../pages/zoos/panda.html"
+            target="_blank"
+          >
+            <div class="look-at-animals-icon hide-icon">
+              <div class="look-at-animals-img panda-icon"></div>
+              <h5 class="look-at-animals-name">Pandas</h5>
+            </div>
+          </a>
+        </div>
+        <div class="look-at-animals-arrows">
+          <img src="../assets/icons/pet-arrow-right.svg" alt="arrow-right" />
+          <img src="../assets/icons/pet-arrow-left.svg" alt="arrow-left" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content footer-content">
+        <div class="logo">
+          <img src="../assets/icons/Logo-large.svg" alt="logo-footer" />
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="nav-item">
+              <a href="../pages/landing.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/map.html" target="_blank">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/zoos/panda.html" target="_blank">Zoos</a>
+            </li>
+            <li class="nav-item"><a href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                target="_blank"
+                >Design</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="designed-by">
+          <p class="designed-by-text">Design by Lemeshko Kateryna</p>
+          <p class="designed-by-text">©RSSchool and ©Yem Digital 2021</p>
+        </div>
+      </div>
+    </footer>
+    <div class="pop-up_bg hidden"></div>
+    <div class="pop-up pop-up_sign-up hidden">
+      <div class="pop-up_header">
+        <div class="pop-up_logo">
+          <img src="../assets/icons/Logo-large.svg" alt="logo-pop-up" />
+        </div>
+      </div>
+      <div class="pop-up_content">
+        <div class="pop-up_toggle">
+          <p class="create-acc_tab toggle_mode">Create acccount</p>
+          <p class="log-in_tab">Log in</p>
+        </div>
+        <div class="pop-up_social">
+          <button class="pop-up_google-btn">Google Sign in</button>
+          <button class="pop-up_facebook-btn">Facebook Sign in</button>
+        </div>
+        <form action="" id="form_sign-up">
+          <label for="name" class="form_label name-label">Name</label>
+          <input class="form-input" type="text" id="name" name="name" />
+          <label for="email" class="form_label">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder=""
+          />
+          <label for="password" class="form_label">Password</label>
+          <input class="form-input" type="text" id="password" name="password" />
+          <div class="checkbox_agree">
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              class="custom-checkbox"
+            />
+            <label for="agree" class="form_label_agree"
+              >Agree with the User Agreement and Privacy Policy</label
+            >
+          </div>
+          <button form="sign-up" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="pop-up leave-feedback hidden">
+      <div class="feedback-popup_header">
+        <h3 class="section-heading pop-up_heading">Leave feedback</h3>
+      </div>
+      <div class="pop-up_content">
+        <form action="" id="feedback-form">
+          <label for="name" class="form_label name-label">Name</label>
+          <input class="form-input feedback-name" type="text" id="name" name="name" />
+          <label for="email" class="form_label">Email</label>
+          <input
+            class="form-input feedback-email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder=""
+          />
+          <label for="feedback-txt" class="form_label feedback">Feedback</label>
+          <textarea
+            class="form-input"
+            id="feedback-txt"
+            name="feedback-txt"
+            placeholder=""
+          ></textarea>
+          <button form="feedback-form" class="send-btn feedback">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="pop-up add-animal hidden">
+      <div class="add-animal-popup_header">
+        <h3 class="section-heading pop-up_heading">Add animal</h3>
+      </div>
+      <div class="pop-up_content">
+        <form action="" id="add-animal_form">
+          <label for="animal-name" class="form_label name-label">Animal Name</label>
+          <input class="form-input" type="text" id="animal-name" name="animal-name" />
+          <div class="gender-photo_animal">
+            <div class="gender-container">
+              <label for="gender" class="form_label">Gender</label>
+              <select name="gender" id="gender">
+                <option class="gender-option" value="Male">Male</option>
+                <option class="gender-option" value="Female">Female</option>
+              </select>
+            </div>
+            <div class="animal-mini-photo">
+              
+            </div>
+            <div class="upload-container">
+              <input
+                id="file-input"
+                type="file"
+                name="file"
+                accept="image/png, image/jpeg"
+                onchange="previewFile()"
+              />
+              <label for="file-input">Upload animal photo</label>
+            </div>
+            <img class="preview" src="../assets/icons/pawprint.svg" height="45" alt="animal-photo">
+          </div>
+          <label for="age" class="form_label">Age</label>
+          <input
+            class="form-input"
+            type="text"
+            id="age"
+            name="age"
+            placeholder=""
+          />
+          <label for="place" class="form_label">Place of living</label>
+          <input
+            class="form-input"
+            type="text"
+            id="place"
+            name="place"
+            placeholder=""
+          />
+          <label for="animal-video" class="form_label">Video link</label>
+          <input
+            class="form-input"
+            type="text"
+            id="animal-video"
+            name="animal-video"
+            placeholder=""
+          />
+          <button form="add-animal_form" class="send-btn">Save</button>
+        </form>
+      </div>
+    </div>
+    <script src="../pages/index.js"></script>
+  </body>
+</html>

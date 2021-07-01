@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;500&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Map</title>
+  </head>
+  <body>
+    <header class="header-bg">
+      <h1 class="hidden">Online Zoo</h1>
+      <div class="content header-content">
+        <div class="header-logo">
+          <a href="../pages/landing.html"
+            ><img src="../assets/icons/Logo-large.svg" alt="main-logo"
+          /></a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="../pages/landing.html">About</a></li>
+            <li class="nav-item">
+              <a class="chosen" href="../pages/map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/zoos/panda.html">Zoos</a>
+            </li>
+            <li class="nav-item"><a class="contact-us" href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                >Design</a
+              >
+            </li>
+            <li class="nav-item burger-item"><a href="#">My account</a></li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <form action="">
+            <input class="search-input" type="text" name="search" placeholder="Search..">
+          </form>
+          <img
+            class="search-icon"
+            src="../assets/icons/search.svg"
+            alt="loupe"
+          />
+        </div>
+        <button class="log-in">Log in</button>
+        <button class="sign-up">Sign up</button>
+        <button class="media-sign-up hidden"></button>
+      </div>
+    </header>
+    <main>
+      <div class="map-bg">
+        <div class="content map">
+          <h3 class="section-heading map-heading">
+            Choose your favorite Animal
+          </h3>
+          <div class="map-animals">
+            <div class="map-animal-wrap-eagle">
+              <div class="map-animal map-eagle">
+                <div class="map-icon-tooltip">
+                  <p class="tooltip-text">Eagle</p>
+                  <p class="tooltip-text">Florida, USA</p>
+                  <button class="tooltip-btn"> Watch online</button>
+                </div>
+                <a class="animal-link" href="../pages/zoos/eagle.html" target="_blank">
+                  <div class="map-icon eagles-map"></div>
+                </a>
+                
+              </div>
+            </div>
+            <div class="map-animal-wrap-alligator">
+              <div class="map-animal map-alligator">
+                <div class="map-icon-tooltip">
+                  <p class="tooltip-text">Alligator</p>
+                  <p class="tooltip-text">Florida, USA</p>
+                  <button class="tooltip-btn"> Watch online</button>
+                </div>
+                <a href="../pages/zoos/alligator.html" target="_blank">
+                  <div class="map-icon alligator-map"></div>
+                </a>
+                
+              </div>
+            </div>
+            
+            <div class="map-animal-wrap-gorilla">
+              <div class="map-animal map-gorilla">
+                <div class="map-icon-tooltip">
+                  <p class="tooltip-text">Gorilla</p>
+                  <p class="tooltip-text">Florida, USA</p>
+                  <button class="tooltip-btn"> Watch online</button>
+                </div>
+                <a href="../pages/zoos/gorilla.html" target="_blank">
+                  <div class="map-icon gorilla-map"></div>
+                </a>
+                
+              </div>
+            </div>
+            
+            <div class="map-animal-wrap-panda">
+              <div class="map-animal map-panda">
+                <div class="map-icon-tooltip">
+                  <p class="tooltip-text">Panda</p>
+                  <p class="tooltip-text">Florida, USA</p>
+                  <button class="tooltip-btn"> Watch online</button>
+                </div>
+                <a href="../pages/zoos/panda.html" target="_blank">
+                  <div class="map-icon panda-map"></div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="map-sizer">
+            <img class="map-sizer-icon" src="../assets/icons/zoom-in.svg" alt="zoom-in">
+            <img class="map-sizer-icon" src="../assets/icons/zoom-out.svg" alt="zoom-out">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content footer-content">
+        <div class="logo">
+          <img src="../assets/icons/Logo-large.svg" alt="logo-footer" />
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="nav-item">
+              <a href="../pages/landing.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/map.html" target="_blank">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="../pages/zoos/panda.html" target="_blank">Zoos</a>
+            </li>
+            <li class="nav-item"><a href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                target="_blank"
+                >Design</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="designed-by">
+          <p class="designed-by-text">Design by Lemeshko Kateryna</p>
+          <p class="designed-by-text">©RSSchool and ©Yem Digital 2021</p>
+        </div>
+      </div>
+    </footer>
+    <div class="pop-up_bg hidden"></div>
+    <div class="pop-up pop-up_sign-up hidden">
+      <div class="pop-up_header">
+        <div class="pop-up_logo">
+          <img src="../assets/icons/Logo-large.svg" alt="logo-pop-up" />
+        </div>
+      </div>
+      <div class="pop-up_content">
+        <div class="pop-up_toggle">
+          <p class="create-acc_tab toggle_mode">Create acccount</p>
+          <p class="log-in_tab">Log in</p>
+        </div>
+        <div class="pop-up_social">
+          <button class="pop-up_social-btn">Google Sign in</button>
+          <button class="pop-up_social-btn">Facebook Sign in</button>
+        </div>
+        <form action="" id="form_sign-up">
+          <label for="name" class="form_label name-label">Name</label>
+          <input class="form-input" type="text" id="name" name="name" />
+          <label for="email" class="form_label">Email</label>
+          <input class="form-input" type="email" id="email" name="email" />
+          <label for="password" class="form_label">Password</label>
+          <input class="form-input" type="text" id="password" name="password" />
+          <div class="checkbox_agree">
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              class="custom-checkbox"
+            />
+            <label for="agree" class="form_label_agree"
+              >Agree with the User Agreement and Privacy Policy</label
+            >
+          </div>
+          <button form="sign-up" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="../pages/index.js"></script>
+  </body>
+</html>

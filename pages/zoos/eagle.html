@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../pages/style.css" />
+    <link rel="stylesheet" href="../../pages/media.css">
+    <link
+      rel="icon"
+      href="../../assets/icons/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;500&family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Eagle</title>
+  </head>
+  <body class="animal-bg">
+    <header class="header-bg">
+      <h1 class="hidden">Online Zoo</h1>
+      <div class="content header-content">
+        <div class="header-logo">
+          <a href="../../pages/landing.html"
+            ><img src="../../assets/icons/Logo-large.svg" alt="main-logo"
+          /></a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../../pages/landing.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/map.html">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="chosen" href="../zoos/panda.html">Zoos</a>
+            </li>
+            <li class="nav-item"><a href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                >Design</a
+              >
+            </li>
+            <li class="nav-item burger-item"><a href="#">My account</a></li>
+          </ul>
+        </nav>
+        <div class="header-search">
+          <form action="">
+            <input class="search-input" type="text" name="search" placeholder="Search..">
+          </form>
+          <img
+            class="search-icon"
+            src="../../assets/icons/search.svg"
+            alt="loupe"
+          />
+        </div>
+        <button class="log-in">Log in</button>
+        <button class="sign-up">Sign up</button>
+        <button class="media-sign-up hidden"></button>
+      </div>
+    </header>
+    <main>
+      <div class="content animal-content">
+        <aside class="sidebar">
+          <div class="sidebar-container">
+            <a title="Panda" href="../../pages/zoos/panda.html">
+              <div class="sidebar-animal panda-sidebar">
+                <div class="sidebar-animal-photo panda-sidebar-img"></div>
+                <p class="sidebar-animal-name">Pandas</p>
+              </div>
+            </a>
+            <a
+              title="Eagle"
+              class="animal-page-link"
+              href="../../pages/zoos/eagle.html"
+            >
+              <div class="sidebar-animal eagle-sidebar">
+                <div
+                  class="sidebar-animal-photo eagle-sidebar-img sidebar-active"
+                ></div>
+                <p class="sidebar-animal-name">
+                  <a href="../../pages/zoos/eagle.html"></a> Eagles
+                </p>
+              </div>
+            </a>
+            <a title="Gorilla" href="../../pages/zoos/gorilla.html">
+              <div class="sidebar-animal gorilla-sidebar">
+                <div class="sidebar-animal-photo gorilla-sidebar-img"></div>
+                <p class="sidebar-animal-name">
+                  <a href="../../pages/zoos/gorilla.html"></a> Gorillas
+                </p>
+              </div>
+            </a>
+            <a title="Alligator" href="../../pages/zoos/alligator.html">
+              <div class="sidebar-animal aligator-sidebar">
+                <div class="sidebar-animal-photo alligator-sidebar-img"></div>
+                <p class="sidebar-animal-name">
+                  <a href="../../pages/zoos/alligator.html"></a> Alligators
+                </p>
+              </div>
+            </a>
+          </div>
+        </aside>
+        <div class="main-content">
+          <div class="main-content-heading">
+            <h3 class="section-heading">Eagles</h3>
+            <div class="main-cameras-buttons">
+              <a class="main-cameras-btn" href="#"
+                ><img src="../../assets/icons/info-btn.svg" alt="info"
+              /></a>
+              <a class="main-cameras-btn" href="#"
+                ><img src="../../assets/icons/fav-btn.svg" alt="fav"
+              /></a>
+            </div>
+          </div>
+          <div class="main-cameras">
+            <h4 class="main-cameras-heading">Main Cameras</h4>
+            <div class="main-cameras-video">
+              <iframe
+                class="video-frame main-video"
+                width="1324"
+                height="604"
+                src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="side-cameras">
+            <h4 class="side-cameras-heading">Side Cameras</h4>
+            <div class="side-cameras-slider">
+              <div class="side-cameras-video">
+                <button class="live-btn">Live</button>
+                <iframe
+                  class="video-frame small-video"
+                  width="380"
+                  height="240"
+                  src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+                <div class="plug"></div>
+              </div>
+              <div class="side-cameras-video">
+                <button class="live-btn">Live</button>
+                <iframe
+                  class="video-frame small-video"
+                  width="380"
+                  height="240"
+                  src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+                <div class="plug"></div>
+              </div>
+              <div class="side-cameras-video">
+                <button class="live-btn">Live</button>
+                <iframe
+                  class="video-frame small-video"
+                  width="380"
+                  height="240"
+                  src="https://www.youtube.com/embed/RmmAzrAkKqI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+                <div class="plug"></div>
+              </div>
+              <div class="side-cameras-arrows">
+                <img
+                  src="../../assets/icons/pet-arrow-right.svg"
+                  alt="arrow-right"
+                />
+                <img
+                  src="../../assets/icons/pet-arrow-left.svg"
+                  alt="arrow-left"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="information">
+            <div class="info">
+              <h3 class="section-heading">Information</h3>
+              <ul class="info-list">
+                <li class="info-list-item">
+                  <p class="info-list-head">Zoo</p>
+                  <p class="info-list-txt">
+                    <a
+                      class="info-list-link"
+                      href="https://www.alligatorfarm.com/"
+                      target="_blank"
+                      >St. Augustine's Alligator Farm Zoological Park</a
+                    >
+                  </p>
+                </li>
+                <li class="info-list-item">
+                  <p class="info-list-head">Type of aviary</p>
+                  <p class="info-list-txt">
+                    Imitation of the natural environment
+                  </p>
+                </li>
+                <li class="info-list-item">
+                  <p class="info-list-head">Habitat</p>
+                  <p class="info-list-txt">
+                    <a
+                      class="info-list-link"
+                      href="https://en.wikipedia.org/wiki/Gulf_of_Santa_Catalina"
+                      target="_blank"
+                      >The coast of Southern California in the Gulf of Santa
+                      Catalina</a
+                    >
+                  </p>
+                </li>
+                <li class="info-list-item">
+                  <p class="info-list-head">Type of food</p>
+                  <p class="info-list-txt">Fish</p>
+                </li>
+
+                <li class="info-list-item">
+                  <p class="info-list-head">Population in the world</p>
+                  <p class="info-list-txt">
+                    In 2020, seven pairs of Bald Eagles nested on Catalina
+                    Island and four chicks fledged.
+                  </p>
+                </li>
+                <li class="info-list-item">
+                  <p class="info-list-head">About species</p>
+                  <p class="info-list-txt">
+                    The bald eagle (Haliaeetus leucocephalus) is a bird of prey
+                    found in North America.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="facts">
+              <h3 class="section-heading">Interesting facts</h3>
+              <ul class="facts-list">
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    Distinguishing feature of the immature bald eagle over the
+                    mature bird is its black, yellow-tipped beak; the mature
+                    eagle has a fully yellow beak.
+                  </p>
+                </li>
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    The bald eagle has sometimes been considered the largest
+                    true raptor (accipitrid) in North America.
+                  </p>
+                </li>
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    The bald eagle has a body length of 70–102 cm. Typical
+                    wingspan is between 1.8 and 2.3 m and mass is normally
+                    between 3 and 6.3 kg
+                  </p>
+                </li>
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    Female pandas give birth to one or two cubs every two years.
+                    Cubs stay with their mothers for 18 months before venturing
+                    off on their own.
+                  </p>
+                </li>
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    BTo hunt fish, the eagle swoops down over the water and
+                    snatches the fish out of the water with its talons.
+                  </p>
+                </li>
+                <li class="facts-list-item">
+                  <p class="facts-list-txt">
+                    The bald eagle is a powerful flier, and soars on thermal
+                    convection currents. It reaches speeds of 56–70 km/h (35–43
+                    mph) when gliding and flapping
+                  </p>
+                </li>
+              </u>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="donate-bg">
+        <div class="content donate">
+          <button class="donate-btn">Donate to volunteers</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content footer-content">
+        <div class="logo">
+          <img src="../../assets/icons/Logo-large.svg" alt="logo-footer" />
+        </div>
+        <nav>
+          <ul class="footer-nav">
+            <li class="nav-item">
+              <a href="../../pages/landing.html" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/map.html" target="_blank">Map</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/zoos/panda.html" target="_blank">Zoos</a>
+            </li>
+            <li class="nav-item"><a href="#">Contact us</a></li>
+            <li class="nav-item">
+              <a
+                href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo"
+                target="_blank"
+                >Design</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="designed-by">
+          <p class="designed-by-text">Design by Lemeshko Kateryna</p>
+          <p class="designed-by-text">©RSSchool and ©Yem Digital 2021</p>
+        </div>
+      </div>
+    </footer>
+    <div class="pop-up_bg hidden"></div>
+    <div class="pop-up pop-up_sign-up hidden">
+      <div class="pop-up_header">
+        <div class="pop-up_logo">
+          <img src="../../assets/icons/Logo-large.svg" alt="logo-pop-up" />
+        </div>
+      </div>
+      <div class="pop-up_content">
+        <div class="pop-up_toggle">
+          <p class="create-acc_tab toggle_mode">Create acccount</p>
+          <p class="log-in_tab">Log in</p>
+        </div>
+        <div class="pop-up_social">
+          <button class="pop-up_social-btn">Google Sign in</button>
+          <button class="pop-up_social-btn">Facebook Sign in</button>
+        </div>
+        <form action="" id="form_sign-up">
+          <label for="name" class="form_label name-label">Name</label>
+          <input class="form-input" type="text" id="name" name="name" />
+          <label for="email" class="form_label">Email</label>
+          <input class="form-input" type="email" id="email" name="email" />
+          <label for="password" class="form_label">Password</label>
+          <input class="form-input" type="text" id="password" name="password" />
+          <div class="checkbox_agree">
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              class="custom-checkbox"
+            />
+            <label for="agree" class="form_label_agree"
+              >Agree with the User Agreement and Privacy Policy</label
+            >
+          </div>
+          <button form="sign-up" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="../index.js"></script>
+  </body>
+</html>
